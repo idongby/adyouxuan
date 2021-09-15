@@ -18,13 +18,15 @@
 2. 左侧和右侧高度固定，scroll-view中加上scroll-y，即可自动滚动；
 3. 发起请求正常渲染即可；
 4. 跳转页面时候加上cid商品分类。
+
 ![](https://z3.ax1x.com/2021/09/15/4ePrm6.png)
 ---
 ## 购物车
 1. 获取本地存储数据，判断是否有购物车数据，如果有则渲染商品信息，如果没有数据则显示空购物车图片；
 2. 复选框的点击改变商品checked数据，方便结算价格和数量计算。
-![](https://z3.ax1x.com/2021/09/15/4eP061.png)
-![](https://z3.ax1x.com/2021/09/15/4ePwlR.png)
+
+![](https://z3.ax1x.com/2021/09/15/4eEeRe.png)
+![](https://z3.ax1x.com/2021/09/15/4eEVPO.png)
 ---
 ## 个人中心
 1. 判断是否登录，如果未登录显示登录按钮，登录则显示用户信息。
@@ -36,7 +38,7 @@
 2. 首先要在`onLoad`函数中接受列表传递的参数，用于发起请求获取商品信息；
 3. 一次加载10个商品，商品上滑会继续发起下一页请求，触底后用`showToast`提示触底。
 4. 上拉事件，使用`onPullDownRefresh`函数实现，还需要在json文件中配置`"enablePullDownRefresh":true`即可。
-![](https://z3.ax1x.com/2021/09/15/4ePckD.png)
+![](https://z3.ax1x.com/2021/09/15/4eEmxH.png)
 ---
 ## 商品详情
 1. 点击轮播图 放大预览图片，调用小程序的api `previewImage`;
