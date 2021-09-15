@@ -1,0 +1,121 @@
+Page{
+    background-color: rgb(235, 236, 231);
+}
+.user_info_wrap{
+    height: 45vh;
+    overflow: hidden;
+    background-color: var(--themeColor);
+    .user_img_wrap{
+        position: relative;
+        .user_bg{
+            height: 50vh;
+            // 高斯模糊
+            filter: blur(10rpx);
+        }
+        .user_info{
+            position: absolute;
+            left:50%;
+            transform: translateX(-50%);
+            top: 20%;
+            text-align: center;
+            .user_icon{
+                width: 150rpx;
+                height: 150rpx;
+                border-radius: 50%;
+            }
+            .user_name{
+                color: #fff;
+                margin-top: 40rpx;
+                font-size: 40rpx;
+            }
+        }
+    }
+    .user_btn_wrap{
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15%;
+        .user_btn{
+            width: 100%;
+            border-radius: 50rpx;
+            font-size: 38rpx;
+        }
+    }
+}
+
+.user_content{
+    position: relative;
+    .user_main{
+        padding-bottom: 100rpx;
+        color: #666;
+        position: absolute;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40rpx;
+    }
+    // 历史记录
+    .history_wrap{
+        padding: 20rpx;
+        background-color: #fff;
+        display: flex;
+        navigator{
+            flex: 1;
+            text-align: center;
+            .his_num{
+                color: var(--themeColor);
+            }
+            .his_name{}
+        }
+    }
+    // 订单信息
+    .orders_wrap{
+        background-color: #fff;
+        margin-top: 30rpx;
+        .orders_title{
+            padding: 15rpx;
+            border-bottom: 1rpx solid #ccc;
+        }
+        .order_content{
+            display: flex;
+            navigator{
+                padding: 15rpx 0;
+                flex: 1;
+                text-align: center;
+                .iconfont{
+                    color: var(--themeColor);
+                    font-size: 40rpx;
+                }
+                .orders_name{}
+            }
+        }
+    }
+    // 收货地址管理
+    .address_wrap{
+        margin-top: 30rpx;
+        background-color: #fff;
+        padding: 20rpx;
+    }
+    
+    // 应用相关信息
+    .app_info_wrap{
+        margin-top: 30rpx;
+        background-color: #fff;
+        .app_info_item{
+            padding: 20rpx;
+            border-bottom: 1rpx solid #ccc;
+        }
+        .app_info_contact{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    // 推荐给其他人
+    .recommend_wrap{
+        margin-top: 30rpx;
+        background-color: #fff;
+        padding: 20rpx;
+    }
+}

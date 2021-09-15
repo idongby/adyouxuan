@@ -1,0 +1,26 @@
+<view class="about_wrap">
+    <image class="about_img" src="../../icons/01.png" mode="widthFix"/>
+    <view class="about_title">
+        <text>姓名：</text>
+        <text>一个名字</text>
+    </view>
+    <view class="about_title">
+        <text>邮箱：</text>
+        <text>idongby@163.com</text>
+    </view>
+    <view class="about_title">
+        <text>一个正在不断努力的前端人。</text>
+    </view>
+</view>
+<view class="about_project">
+    <view class="project_title">
+        <text>项目名称：</text>
+        <text>阿栋优选（电商小程序）</text>
+    </view>
+    <view class="project_content">
+        <text>项目包括首页展示、商品分类、购物车、个人中心、商品详情、商品收藏、订单查询、搜索中心等页面。</text>
+        <text>使用wx.request APi发起请求获取数据，并将数据渲染到相应页面。</text>
+        <text>使用Storage缓存数据。</text>
+        <text>创建搜索、tabs自定义组件，方便多个页面调用。</text>
+    </view>
+</view>
